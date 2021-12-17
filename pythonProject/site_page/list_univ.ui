@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1130</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1130</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Список ВУЗов</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+ background-color:rgb(255, 228, 250)
+}
+QLabel
+{
+	 font: 8pt &quot;Segoe Script&quot;;
+	 color: rgb(0, 0, 0);
+}
+
+QPushButton
+{	
+	 font: 10pt &quot;Segoe Script&quot;;
+	 background-color: rgb(255, 255, 255);
+	 border-style: outset;
+	 border-width: 3px;
+	 border-color: rgb(235, 235, 235);
+	 color: black;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(247, 214, 239);
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed
+{
+	background-color: rgb(231, 200, 225);
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>20</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Script</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Доступные ВУЗы </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>30</y>
+      <width>951</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Город: Екатеринбург
+    УрФУ имени Б.Н. Ельцина – Уральский федеральный университет имени Б.Н. Ельцина
+    УрГПУ – Уральский государственный педагогический университет
+    УрГЮУ – Уральский государственный юридический университет
+
+Город: Казань
+    КФУ – Казанский (Приволжский) федеральный университет
+    КНИТУ – Казанский национальный исследовательский технологический университет
+    КГМУ – Казанский государственный медицинский университет
+
+Город: Москва
+   МГУ имени М.В. Ломоносова – Московский государственный университет имени М.В. Ломоносова
+   МГТУ имени Н.Э. Баумана – Московский государственный технический университет имени Н.Э. Баумана
+  Первый МГМУ имени И.М. Сеченова – Первый Московский государственный медицинский университет имени И.М. Сеченова
+
+Город: Новосибирск
+   НГУ – Новосибирский национальный исследовательский государственный университет
+   НГТУ – Новосибирский государственный технический университет
+   СГУГиТ – Сибирский государственный университет геосистем и технологий
+
+Город: Санкт - Петербург
+   СПбГУ – Санкт-Петербургский государственный университет
+   СПбПУ – Санкт-Петербургский политехнический университет Петра Великого
+  ИТМО – Санкт-Петербургский национальный исследовательский университет информационных технологий, механики и оптики
+
+Город: Томск
+   ТПУ – Национальный исследовательский Томский политехнический университет
+   ТГУ – Национальный исследовательский Томский государственный университет
+   ТГАСУ – Томский государственный архитектурно-строительный университет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_list_univ">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>700</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выход</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

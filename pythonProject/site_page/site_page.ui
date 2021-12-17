@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1130</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1130</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Nirmala UI Semilight</family>
+    <weight>50</weight>
+    <bold>false</bold>
+    <underline>false</underline>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Поступи или умри</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	 border-image: url(C:/PyQt/pythonProject/site_page/4.jpg);
+}
+
+QLabel
+{
+	 font: 10pt &quot;Segoe Script&quot;;
+	 color: rgb(255, 255, 255);
+}
+
+QPushButton
+{	
+	 font: 10pt &quot;Segoe Script&quot;;
+	 background-color: rgb(255, 255, 255);
+	 border-style: outset;
+	 border-width: 3px;
+	 border-color: rgb(235, 235, 235);
+	 color: black;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(255, 235, 253);
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed
+{
+	background-color: rgb(245, 218, 235);
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+}
+
+QComboBox
+{	
+	 font: 10pt &quot;Segoe Script&quot;;
+	 background-color: rgb(255, 255, 255);
+	 border-style: outset;
+	 border-width: 3px;
+	 border-color: rgb(235, 235, 235);
+	 color: black;
+}
+
+QComboBox QAbstractItemView
+
+{
+	  outline: none;
+      border-color: rgb(235, 235, 235);
+      selection-background-color: rgb(255, 235, 253);
+	  selection-color: rgb(155, 135, 153);
+      font: 10pt &quot;Segoe Script&quot;;
+}
+
+QComboBox QAbstractItemView::item:hover
+{
+	selection-background-color:rgb(255, 235, 253);
+	border-width: 2px;
+	color: black;
+	border-color: rgb(235, 235, 235);
+}
+
+QComboBox QAbstractItemView::item:pressed
+{
+	selection-background-color: rgb(245, 218, 235);
+	border-width: 2px;
+	color: black;
+	border-color: rgb(235, 235, 235);
+}
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>191</width>
+      <height>164</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+
+{
+	background-color: rgb(241, 189, 255);
+	 border-style: outset;
+     border-width: 2px;
+	border-color: rgb(217, 187, 225);
+	color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Имя пользователя</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="available_uni_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Доступные ВУЗы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="specialty_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Специальности</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="request_history_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>История запросов</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exit_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Выход</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>841</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>14</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+	font: 14pt &quot;Segoe Script&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>Мы поможем Вам  в выборе ВУЗа вашей мечты!</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Для более точных расчётов выберете поля из выпадающего списка:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Город:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="town_comboBox">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <item>
+          <property name="text">
+           <string>Любой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Екатеринбург</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Казань</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Москва</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Новосибирск</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Санкт - Петербург</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Томск</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Предметы*:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="subject_comboBox_1">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Любой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>математика</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>физика</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>информатика и ИКТ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>история</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>биология</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>обществознание</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>иностранный язык</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>химия</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>география</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="subject_comboBox_2">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Любой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>математика</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>физика</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>информатика и ИКТ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>история</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>биология</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>обществознание</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>иностранный язык</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>химия</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>география</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="subject_comboBox_3">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Любой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>математика</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>физика</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>информатика и ИКТ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>история</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>биология</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>обществознание</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>иностранный язык</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>химия</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>география</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>*Русский язык учитывается как обязательный предмет</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Сумма баллов**:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="sum_textEdit">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>** Предполагаемые или уже полученные</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="search_pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>171</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>171</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Поиск</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

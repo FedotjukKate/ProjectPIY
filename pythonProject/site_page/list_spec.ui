@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1130</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1130</width>
+    <height>795</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Список специальностей</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+ background-color:rgb(255, 228, 250)
+}
+QLabel
+{
+	 font: 9pt &quot;Segoe Script&quot;;
+	 color: rgb(0, 0, 0);
+}
+
+QPushButton
+{	
+	 font: 10pt &quot;Segoe Script&quot;;
+	 background-color: rgb(255, 255, 255);
+	 border-style: outset;
+	 border-width: 3px;
+	 border-color: rgb(235, 235, 235);
+	 color: black;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(247, 214, 239);
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed
+{
+	background-color: rgb(231, 200, 225);
+	border-width: 2px;
+	border-color: rgb(235, 235, 235);
+}  </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>20</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Специальности</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>30</y>
+      <width>961</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>	01.03.01	 Математика
+	01.03.02	Прикладная математика и информатика
+	03.03.02	Физика
+	05.03.06	Экология и природопользование
+	06.03.01	Биология
+	08.03.01	Строительство
+	09.03.01	Информатика и вычислительная техника
+	09.03.02	Информационные системы и технологии
+	09.03.03	Прикладная информатика
+	12.03.01	Приборостроение
+	15.03.01	Машиностроение
+	16.03.03	Холодильная, криогенная техника и системы жизнеобеспечения
+	21.03.02	Землеустройство и кадастры
+	30.05.01	Медицинская биохимия
+	30.05.02	Медицинская биофизика
+	31.05.01	Лечебное дело
+	37.03.01	Психология
+	40.03.01	Юриспруденция
+	40.05.01	Правовое обеспечение национальной безопасности
+	40.05.03	Судебная экспертиза
+	40.05.04	Судебная и прокурорская деятельность
+	43.03.02	Туризм
+	44.03.01	Педагогическое образование
+	44.03.02	Психолого-педагогическое образование
+	44.03.05	Педагогическое образование (с двумя профилями подготовки)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_list_spec">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>700</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выход</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
